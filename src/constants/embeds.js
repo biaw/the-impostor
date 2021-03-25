@@ -18,10 +18,9 @@ module.exports.panelEmbeds = [
     color: 0xE74C3C
   },
   {
-    title: "Changelog December",
+    title: "Changelog",
     description: [
-      "[•](https://github.com/biaw/the-impostor/commit/75e64c97440d6789367e0ae986fe31bbc5502e3d) Fixed a bug that have existed for a very very long time. The host can now actually control the game without moderation powers.",
-      "[•](https://github.com/biaw/the-impostor/commit/d55ee4b4addbd69a7107e1b0b28dd9b1d4565cb5) The hosting channel will now copy category permissions."
+      "No Major Changes",
     ].join("\n\n"),
     color: 0x1ABC9C
   },

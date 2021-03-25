@@ -74,7 +74,7 @@ module.exports.run = async message => {
         {
           name: "🌐 Links",
           value: [
-            `**Invite me:** [https://discordapp.com/api/oauth2/authorize?...](https://discordapp.com/api/oauth2/authorize?client_id=${message.client.user.id}&permissions=805432400&scope=bot)`,
+            `**Invite me:** [https://discordapp.com/api/oauth2/authorize?...](https://discordapp.com/api/oauth2/authorize?client_id=${message.client.user.id}&permissions=805432400&scope=bot%20applications.commands)`,
             "**Source Code**: https://github.com/biaw/the-impostor",
             "**Support Server**: https://promise.solutions/support"
           ].join("\n"),
