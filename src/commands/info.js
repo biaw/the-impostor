@@ -7,7 +7,7 @@ module.exports = {
   checkArgs: (args) => !args.length
 };
 
-const os = require("os"), platform = `${os.type()} (${os.release()})`, djsversion = require("../../package.json").dependencies["discord.js"], config = require("../../config.json");
+const os = require("os"), platform = `${os.type()} (${os.release()})`, djsversion = require("../../package.json").dependencies["discord.js"], config = require("../../config.json"), msToTime = require("../constants/index.js");
 
 let guilds = 0, users = 0, shardCount = 0, memory = 0, memoryUsage = "0MB", memoryGlobal = 0, memoryUsageGlobal = "0MB", nextUpdate = Date.now();
 
@@ -68,6 +68,7 @@ module.exports.run = async message => {
             `**Guilds**: \`${message.client.guilds.cache.size}\``,
             `**Users**: \`${message.client.guilds.cache.map(g => g.memberCount).reduce((a, b) => a + b)}\``,
             `**Memory Usage**: \`${memoryUsage}\``
+            `**Uptime**: \`${msToTime(message.client.uptime)}}\``
           ].join("\n"),
           inline: true
         },
